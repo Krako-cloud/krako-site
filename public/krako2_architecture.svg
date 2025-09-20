@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  <text x="50%" y="56" fill="#e2e8f0" font-size="30" font-weight="600" text-anchor="middle" font-family="system-ui">
+    Krako 2.0 — Architecture (placeholder)
+  </text>
+
+  <defs>
+    <style>
+      .box { fill:#1f2937; stroke:#334155; stroke-width:2; rx:10; }
+      .label { fill:#e2e8f0; font: 600 16px system-ui; }
+      .sublabel { fill:#cbd5e1; font: 500 14px system-ui; }
+      .arrow { stroke:#94a3b8; stroke-width:3; fill:none; marker-end:url(#arrow); }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- Row 1 -->
+  <rect class="box" x="60"  y="120" width="190" height="64"/>
+  <text class="label" x="155" y="158" text-anchor="middle">Input</text>
+
+  <rect class="box" x="280" y="120" width="240" height="64"/>
+  <text class="label" x="400" y="148" text-anchor="middle">MOTHER</text>
+  <text class="sublabel" x="400" y="168" text-anchor="middle">(Orchestrator)</text>
+
+  <!-- Branches -->
+  <rect class="box" x="560" y="70"  width="240" height="64"/>
+  <text class="label" x="680" y="98" text-anchor="middle">Graph Layer</text>
+
+  <rect class="box" x="560" y="160" width="240" height="64"/>
+  <text class="label" x="680" y="188" text-anchor="middle">SLM Pool</text>
+  <text class="sublabel" x="680" y="208" text-anchor="middle">PC / Mobile / MEC</text>
+
+  <rect class="box" x="560" y="250" width="240" height="64"/>
+  <text class="label" x="680" y="278" text-anchor="middle">LLM Fallback</text>
+  <text class="sublabel" x="680" y="298" text-anchor="middle">Cloud / MEC</text>
+
+  <!-- Validation / Synth -->
+  <rect class="box" x="840" y="160" width="210" height="64"/>
+  <text class="label" x="945" y="188" text-anchor="middle">Validation / Consensus</text>
+
+  <rect class="box" x="1075" y="160" width="100" height="64"/>
+  <text class="label" x="1125" y="188" text-anchor="middle">Synth</text>
+
+  <!-- Arrows -->
+  <path class="arrow" d="M250,152 L280,152"/>
+  <path class="arrow" d="M520,152 C540,152 540,102 560,102"/>
+  <path class="arrow" d="M520,152 L560,192"/>
+  <path class="arrow" d="M520,152 C540,152 540,282 560,282"/>
+  <path class="arrow" d="M800,102 C820,102 820,192 840,192"/>
+  <path class="arrow" d="M800,192 L840,192"/>
+  <path class="arrow" d="M800,282 C820,282 820,192 840,192"/>
+  <path class="arrow" d="M1050,192 L1075,192"/>
+
+  <!-- Footnote (ampersand escaped) -->
+  <text class="sublabel" x="940" y="260" text-anchor="middle">
+    Rewards &amp; logs feed back into scheduling
+  </text>
+</svg>
